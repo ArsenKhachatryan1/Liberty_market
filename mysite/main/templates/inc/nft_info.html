@@ -1,0 +1,52 @@
+<div class="create-nft">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2>Create Your NFT & Put It On The Market.</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="main-button">
+            <a href="{% url 'create' %}">Create Your NFT Now</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <div class="number">
+              <h6>1</h6>
+            </div>
+            <div class="icon">
+              <img src="{{ nft_info1.img.url }}" alt="">
+            </div>
+            <h4>{{ nft_info1.title }}</h4>
+            <p>{{ nft_info1.text1 }}</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item second-item">
+            <div class="number">
+              <h6>2</h6>
+            </div>
+            <div class="icon">
+              <img src="{{ nft_info2.img.url }}" alt="">
+            </div>
+            <h4>{{ nft_info2.title }}</h4>
+            <p>{{ nft_info2.text1 }} <a href="{{ nft_info2.link }}" target="_blank" rel="nofollow">{{ nft_info2.text_linked }}</a> {{ nft_info2.text3 }}</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item">
+            <div class="icon">
+              <img src="{{ nft_info3.img.url }}" alt="">
+            </div>
+            <h4>{{ nft_info3.title }}</h4>
+            <p>{{ nft_info3.text1 }} <a rel="nofollow" href="{{ nft_info3.link }}" target="_parent">{{ nft_info3.text_linked }}</a> {{ nft_info3.text3 }}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
